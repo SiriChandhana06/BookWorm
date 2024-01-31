@@ -1,0 +1,68 @@
+.h{
+  text-align: center;
+}
+.home{
+  overflow: hidden;
+      white-space: nowrap;
+      font-size: 50px;
+      animation: typing 5s steps(100);
+      text-align: center;
+      color: black;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.home1{
+  text-align: center;
+  padding: 240px;
+  align-items: center;
+}
+.btn{
+  display: flex;
+  column-gap: 4%;
+  text-align: center;
+  align-items: center;
+  animation-name: slideUp;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  display: block;
+}
+.odd{
+  text-align: center;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+}
+.even{
+  text-align: center;
+  animation-delay: 150ms;
+  animation-fill-mode: both;
+}
+@keyframes slideUp{
+  0%,50%{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  60%,100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+button{
+  height: 50px;
+  width: 80px;
+  border: 2px solid ;
+  border-color: lightgray;
+  border-radius: 10px;
+  background-color:rgb(250 165 0);
+}
+.bg{
+  background-image: url("https://i.pinimg.com/736x/e0/d1/2e/e0d12e626aff0a145613dcae73eadc4b.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
