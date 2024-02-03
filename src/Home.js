@@ -1,20 +1,19 @@
+import { useNavigate } from "react-router-dom";
+
 
 function Home(){
-    function login(){
-        console.log("helo");
-    }
-    function signup(){
-        console.log("hi");
-    }
+    const navigate = useNavigate();
     return(
-        <div className="home1"> 
-           <div className="h">
-            <h1 className="home">BOOK WORM...</h1>
+        <div id="background">
+        <div id="home1"> 
+           <div id="h">
+            <h1 id="home" className="font-bold">BOOK WORM...</h1>
             </div>
-            <div className="btn">
-            <button className="odd" onClick={login}>Login</button>
-            <button className="even"onClick={signup}>Signup</button>
+            <div id="btn" className="pb-4">
+            <button id="odd" onClick={()=>(navigate('/login'))}>Login</button>
+            <button id="even" onClick={()=>(navigate('/signup'))}>Signup</button>
             </div>
+        </div>
         </div>
     )
 }

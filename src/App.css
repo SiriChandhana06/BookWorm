@@ -1,7 +1,7 @@
-.h{
+#h{
   text-align: center;
 }
-.home{
+#home{
   overflow: hidden;
       white-space: nowrap;
       font-size: 50px;
@@ -17,12 +17,12 @@
     width: 100%;
   }
 }
-.home1{
+#home1{
   text-align: center;
   padding: 240px;
   align-items: center;
 }
-.btn{
+#btn{
   display: flex;
   column-gap: 4%;
   text-align: center;
@@ -32,12 +32,12 @@
   animation-timing-function: ease-in;
   display: block;
 }
-.odd{
+#odd{
   text-align: center;
   animation-delay: 0ms;
   animation-fill-mode: forwards;
 }
-.even{
+#even{
   text-align: center;
   animation-delay: 150ms;
   animation-fill-mode: both;
@@ -61,8 +61,21 @@ button{
   border-radius: 10px;
   background-color:rgb(250 165 0);
 }
-.bg{
+#btn{
+  padding-left: 38%;
+  padding-top: 20px;
+  align-items: center;
+  display: flex;
+  column-gap: 4%;
+}
+#background{
   background-image: url("https://i.pinimg.com/736x/e0/d1/2e/e0d12e626aff0a145613dcae73eadc4b.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+#loginpage,  #signup{
+  background-image: url('https://i.pinimg.com/736x/e0/d1/2e/e0d12e626aff0a145613dcae73eadc4b.jpg');
   background-size:cover;
   background-repeat: no-repeat;
+  
 }
