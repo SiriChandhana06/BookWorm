@@ -1,5 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 function Signup(){
     function validation(){
+    
         var email = document.getElementById("email").value;
         var password = document.getElementById("password").value;
         var confrimpassword = document.getElementById("confrimpassword").value;
@@ -34,11 +37,19 @@ function Signup(){
             document.getElementById("confrimpassworderror").innerText="Password Do Not Match";
             return false;
         }
-        
-
-
-
+        return name !== "" && emailpattern.test(email) && username !== "" && password.length >= 8 && password === confrimpassword;
     }
+
+
+
+    const navigate = useNavigate();
+
+    const handleSignup = ()=>{
+        if (validation()){
+            navigate('/bookworm');
+        }
+    }
+
     return(
         <div id="signup">
             <h1 className="flex justify-center font-bold text-4xl pt-16">SIGNUP</h1>
@@ -63,7 +74,7 @@ function Signup(){
             <p className="text-red-800" id="confrimpassworderror"></p>
             </div>
             <div className="flex justify-center pt-12 pb-10 ">
-                <button onClick={validation}>SIGNUP</button>
+                <button onClick={handleSignup}>SIGNUP</button>
             </div>
         </div>
     )

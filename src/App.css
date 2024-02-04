@@ -79,3 +79,45 @@ button{
   background-repeat: no-repeat;
   
 }
+#un{
+  padding-top: 26px;
+  padding-left: 985px;
+}
+#n{
+  border-radius: 50px;
+}
+#nav{
+  background-color: orange;
+}
+#p{
+  border: hidden;
+}
+#footer{
+  background-color: orange;
+}
+#book{
+  width:fit-content;
+  padding: 20px;
+  margin: 10px;
+  background-color: lightgray;
+}
+#book img{
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bl{
+  width: 100%;
+  display: flex;
+  column-gap: 15px;
+}
+#url{
+  width:200px;
+}
+#bt{
+  background-color: orange;
+}
