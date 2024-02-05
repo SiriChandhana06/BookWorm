@@ -113,11 +113,29 @@ button{
 #bl{
   width: 100%;
   display: flex;
-  column-gap: 15px;
+  column-gap: 18px;
 }
 #url{
   width:200px;
 }
 #bt{
   background-color: orange;
+}
+#gb{
+  background-color: rgb(254 249 195);
+}
+#arrow{
+  padding-left: 1170px;
+  padding-bottom: 2px;
+  padding-top: -50px;
+}
+#arr{
+  padding-left: 1145px;
+  padding-bottom: 2px;
+  padding-top: -50px;
+}
+#arro{
+  padding-left: 1200px;
+  padding-bottom: 2px;
+  padding-top: -50px;
 }

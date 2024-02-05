@@ -7,7 +7,7 @@ function Book(props){
             <img id="url" src={props.url}/>
             <h3>{props.bookname}</h3>
             <h4>{props.authorname}</h4>
-            <a href="#"><p>Read Book</p></a>
+            <a href={props.src} target="/blank"><button>Read</button></a>
             </div>
         </div>
     )
