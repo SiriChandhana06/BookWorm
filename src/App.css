@@ -122,7 +122,7 @@ button{
   background-color: orange;
 }
 #gb{
-  background-color: rgb(254 249 195);
+  background-color: rgb(222,184,135);
 }
 #arrow{
   padding-left: 1170px;
@@ -138,4 +138,15 @@ button{
   padding-left: 1200px;
   padding-bottom: 2px;
   padding-top: -50px;
+}
+#m{
+  border-radius: 50%;
+}
+#lo{
+  padding-top: 10px;
+  padding-left: 1065px;
+}
+#plus{
+  padding-left: 1225px;
+  cursor: pointer;
 }
