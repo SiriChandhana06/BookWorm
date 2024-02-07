@@ -91,6 +91,7 @@ button{
 }
 #p{
   border: hidden;
+  cursor: pointer;
 }
 #footer{
   background-color: orange;
@@ -145,8 +146,24 @@ button{
 #lo{
   padding-top: 10px;
   padding-left: 1065px;
+  
 }
 #plus{
   padding-left: 1225px;
   cursor: pointer;
+}
+#gbb{
+  background-color: white;
+}
+#d{
+  color: orange;
+}
+#l{
+  cursor: pointer;
+}
+#file{
+  padding-left: 550px;
+}
+#ss{
+  padding-left: 600px;
 }
