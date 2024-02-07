@@ -12,6 +12,7 @@ function Loginpage(){
             navigate('/bookworm');
         }
     } 
+    
     return(
         <div id="loginpage">
             <h1 className="flex justify-center font-bold text-4xl pt-48">LOGIN</h1>
