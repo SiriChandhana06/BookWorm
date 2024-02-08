@@ -5,10 +5,8 @@ function Loginpage(){
     const navigate = useNavigate();
     const [Username, setUsername] = useState('');
     const [Password, setPassword] = useState('')
-    const username = document.getElementById("1username");
-    const password = document.getElementById("1password");
     const Log = ()=>{
-        if(Username || Password){
+        if(Username && Password){
             navigate('/bookworm');
         }
     } 
