@@ -6,7 +6,7 @@ const app = express();
 const port = 3001;
 
 // Connect to MongoDB (Make sure you have MongoDB installed and running)
-mongoose.connect('mongodb+srv://sirisiri3006:Siri Chandhana Kotha@cluster0.wby1aah.mongodb.net/', {
+mongoose.connect('mongodb+srv://sirisiri3006:Siri Chandhana Kotha@cluster0.wby1aah.mongodb.net/Bookworm', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

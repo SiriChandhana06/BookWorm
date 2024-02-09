@@ -40,42 +40,15 @@ function Signup(){
         return name !== "" && emailpattern.test(email) && username !== "" && password.length >= 8 && password === confrimpassword;
     }
 
-    const handleSignup = async () => {
-        setNameError("");
-        setEmailError("");
-        setUsernameError("");
-        setPasswordError("");
-        setConfirmPasswordError("");
-    
-        if (validation()) {
-          try {
-            const response = await fetch("http://localhost:3001/api/signup", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                name,
-                email,
-                username,
-                password,
-              }),
-            });
-    
-            if (response.ok) {
-              navigate('/bookworm');
-            } else {
-              const data = await response.json();
-              // Handle specific errors or display a generic error message
-              console.error(data.error || "Signup failed");
-            }
-          } catch (error) {
-            console.error("An error occurred during signup:", error);
-          }
-        }
-      };
+
 
     const navigate = useNavigate();
+
+    const handleSignup = ()=>{
+        if (validation()){
+            navigate('/bookworm');
+        }
+    }
 
     return(
         <div id="signup">
@@ -100,9 +73,10 @@ function Signup(){
             <input id="confrimpassword" className="border-2 border-black rounded-xl pl-4 h-10 w-96" type="password" placeholder="confrim Password" required/>
             <p className="text-red-800" id="confrimpassworderror"></p>
             </div>
-            <div className="flex justify-center pt-12 pb-10 ">
+            <div className="flex justify-center pt-10 pb-2 ">
                 <button onClick={handleSignup}>SIGNUP</button>
             </div>
+            <div className="flex justify-center text-xl pt-2 pb-2 font-semibold">DO YOU HAVE AN ACCOUNT? <a href="/login">Login</a></div>
         </div>
     )
 }
