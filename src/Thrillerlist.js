@@ -1,7 +1,13 @@
+import Footer from "./Footer";
+import Nav from "./Nav";
+import Thrillerapi from "./Thrillerapi";
+
 function Thrillerlist(){
     return(
-        <div>
-            <h1>Hello Thriller Books</h1>
+        <div id="gb">
+            <Nav/>
+            <Thrillerapi/>
+            <Footer/>
         </div>
     )
 }

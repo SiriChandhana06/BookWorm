@@ -1,7 +1,14 @@
+
+import Nav from "./Nav";
+import Footer from "./Footer";
+import Kidsapi from "./Kidsapi";
+
 function Kidslist(){
     return(
-        <div>
-            <h1>Hello Kids Book</h1>
+        <div id="gb">
+            <Nav/>
+            <Kidsapi/>
+            <Footer/>
         </div>
     )
 }

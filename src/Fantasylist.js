@@ -1,7 +1,14 @@
+import Nav from "./Nav";
+import Footer from "./Footer";
+import Fantasyapi from "./Fantasyapi";
+ 
 function Fantasylist(){
+
     return(
-        <div>
-            <h1>Hello Fantasy Book</h1>
+        <div id="gb">
+            <Nav/>
+            <Fantasyapi/>
+            <Footer/>
         </div>
     )
 }

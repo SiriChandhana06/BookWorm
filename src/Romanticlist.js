@@ -1,7 +1,13 @@
+import Footer from "./Footer";
+import Nav from "./Nav";
+import Romanticapi from "./Romanticapi";
+
 function Romanticlist(){
     return(
-        <div>
-            <h1>Hello Romantic Books</h1>
+        <div id="gb">
+            <Nav/>
+            <Romanticapi/>
+            <Footer/>
         </div>
     )
 }

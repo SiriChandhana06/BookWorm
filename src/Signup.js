@@ -70,7 +70,7 @@ function Signup() {
                   },
                   body: JSON.stringify({
                     name,
-                    email,
+                    email, 
                     username,
                     password,
                   }),
