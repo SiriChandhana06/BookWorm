@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
 const port = 3001;
@@ -22,10 +23,11 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('User', userSchema);
 
 // Middleware
+app.use(cors()); // Add this line to enable CORS
 app.use(bodyParser.json());
 
 // Route for user signup
-app.post('/api/signup', async (req, res) => {
+app.post('/signup', async (req, res) => {
   const { name, email, username, password } = req.body;
 
   try {
@@ -41,7 +43,7 @@ app.post('/api/signup', async (req, res) => {
     // Save the user to the database
     await newUser.save();
 
-    res.status(201).json({ message: 'User created successfully' });
+    res.status(200).json({ message: 'User created successfully' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });

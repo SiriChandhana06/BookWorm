@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Signup() {
+const Signup = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
@@ -14,7 +14,7 @@ function Signup() {
   const [passwordError, setPasswordError] = useState("");
   const [confirmPasswordError, setConfirmPasswordError] = useState("");
 
-  const navigate = useNavigate();
+  const navigation = useNavigate();
 
   const validation = () => {
     if (name === "") {
@@ -52,18 +52,18 @@ function Signup() {
     );
   };
   
-       
-
-        const handleSignup = async () => {
+  
+  
+  const handleSignup = async () => {
+    
+    if (validation()) {
             setNameError("");
             setEmailError("");
             setUsernameError("");
             setPasswordError("");
             setConfirmPasswordError("");
-        
-            if (validation()) {
               try {
-                const response = await fetch("http://localhost:3001/api/signup", {
+                const response = await fetch("http://localhost:3001/signup", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
@@ -77,7 +77,7 @@ function Signup() {
                 });
         
                 if (response.ok) {
-                  navigate('/bookworm');
+                  navigation.navigate('/bookworm');
                 } else {
                   const data = await response.json();
                   // Handle specific errors or display a generic error message
@@ -88,9 +88,9 @@ function Signup() {
               }
             }
           };
-
-
-
+          
+          
+          
 
 
     return(
