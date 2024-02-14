@@ -1,4 +1,3 @@
-
 import './App.css';
 import Home from './Home';
 import Loginpage from './Login';
@@ -11,7 +10,6 @@ import Thrillerlist from './Thrillerlist';
 import Romanticlist from './Romanticlist';
 import Kidslist from './Kidslist';
 import Humorlist from './Humorlist';
-
 
 function App() {
   return (
