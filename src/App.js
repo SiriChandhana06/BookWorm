@@ -27,7 +27,6 @@ function App() {
         <Route path='/romanticlist' element={<Romanticlist/>}/>
         <Route path='/kidslist' element={<Kidslist/>}/>
         <Route path='/humorlist' element={<Humorlist/>}/>
-
       </Routes>
     </Router>
   );
